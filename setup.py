@@ -10,7 +10,5 @@ import py2exe
 
 from glob import glob
 
-data_files = [("Microsoft.VC90.CRT", glob(r'DLLs\*.*'))]
-
 setup(console=["sharpimportcsv.py"],
       data_files=data_files)
