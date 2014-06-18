@@ -1,3 +1,20 @@
+==============
+SharpImportCSV
+==============
+
+This tool can be used to import a CSV file of names and contact information into a Sharp copier.
+
+It uses the built-in web interface on the Sharp.
+
+Currently it does not handle login, as the address book is publicly editable by default.
+
+This tool *does not check for duplicate entries*; if you run it twice you *will* have duplicate entries. Use the ``-s`` flag to simulate a run, without adding any entries to the copier.
+
+========
+Usage
+========
+
+
 Run ``sharpimportcsv.py -h`` to view help.
 
 To build an executable, run ``python setup.py py2exe``
